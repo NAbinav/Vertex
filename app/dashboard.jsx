@@ -20,7 +20,8 @@ export default function Dashboard() {
         <a href="#">Logout</a>
       </nav>
       <section className="dashboard">
-        <h2>Today's Appointments</h2>
+        <h2>Today&apos;s Appointments</h2>{" "}
+        {/* Corrected unescaped single quote */}
         {/* Appointment cards */}
         <div className="card">
           <h3>Patient Appointments</h3>

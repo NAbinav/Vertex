@@ -6,19 +6,13 @@ export default function Dashboard() {
     <div>
       <header>Doctor Dashboard</header>
       <nav className="nav-bar">
-        <a href="/">Home</a>
+        <a href="#">Home</a>
         <div className="dropdown">
           <a href="#">Patients</a>
           <div className="dropdown-content">
-            <div href="#" className="text-black cursor-pointer m-4">
-              Patient Records
-            </div>
-            <div href="#" className="text-black cursor-pointer m-4">
-              Appointments
-            </div>
-            <div href="#" className="text-black cursor-pointer m-4">
-              Prescriptions
-            </div>
+            <a href="#">Patient Records</a>
+            <a href="#">Appointments</a>
+            <a href="#">Prescriptions</a>
           </div>
         </div>
         <a href="#">Reports</a>
@@ -26,7 +20,8 @@ export default function Dashboard() {
         <a href="#">Logout</a>
       </nav>
       <section className="dashboard">
-        <h2>Today's Appointments</h2>
+        <h2>Today&apos;s Appointments</h2>{" "}
+        {/* Corrected unescaped single quote */}
         {/* Appointment cards */}
         <div className="card">
           <h3>Patient Appointments</h3>
