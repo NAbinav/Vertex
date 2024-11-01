@@ -1,0 +1,404 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+/* styles/globals.css */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+.header {
+  background-color: #03045E;
+  padding: 10px 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.header nav a, .logout {
+  color: white;
+  text-decoration: none;
+  margin-left: 15px;
+  padding: 8px 16px;
+}
+.logout {
+  background-color: #0077B6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  margin-top: 80px;
+}
+.intro h1 {
+  color: #0077B6;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.intro p {
+  color: #555;
+  font-size: 16px;
+}
+
+/* Test Options Section */
+.test-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.test-category {
+  width: 45%;
+}
+.test-category h2 {
+  color: #0077B6;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+/* Test Card */
+.test-card {
+  background: linear-gradient(135deg, #90E0EF, #CAF0F8);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+.test-card:hover {
+  transform: scale(1.05);
+}
+.test-card .icon {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.test-card h3 {
+  color: #03045E;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.test-card p {
+  color: #333;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.test-card .start-test {
+  background-color: #0077B6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Real-Time Results Section */
+.real-time-results {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.result-card {
+  background-color: #F0F0F0;
+  padding: 20px;
+  width: 45%;
+  text-align: center;
+  border-radius: 10px;
+}
+.result-card h3 {
+  color: #03045E;
+  font-size: 18px;
+}
+
+/* Test History Section */
+.test-history {
+  margin-top: 30px;
+  text-align: center;
+}
+.history-card {
+  background-color: #D1E9FF;
+  padding: 20px;
+  margin: 10px auto;
+  width: 50%;
+  border-radius: 10px;
+  text-align: center;
+}
+.history-card button {
+  background-color: #0077B6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #0077B6;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  margin-top: 40px;
+}
+
+h2 {
+  color: #0077B6;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  color: #03045E;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #90E0EF;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0077B6;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f8f;
+}
+
+/* Dashboard Specific Styles */
+.header {
+  background-color: #0077B6;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #005f8c;
+  padding: 10px 0;
+  color: white;
+}
+
+.nav-bar a,
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dashboard {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background-color: #f9f9fb;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.card h3 {
+  color: #0077B6;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.appointment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.chat-button,
+.history-button {
+  background-color: #0077B6;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-button:hover,
+.history-button:hover {
+  background-color: #005f8c;
+}
+
+/* Booking Page Styles */
+.filter-bar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.filter-bar select,
+.filter-bar button {
+  padding: 10px;
+  border: 1px solid #90E0EF;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.doctor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.doctor-card {
+  padding: 15px;
+  border: 1px solid #90E0EF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+}
+
+.doctor-card h3 {
+  color: #0077B6;
+}
+
+.profile-button,
+.book-button {
+  padding: 8px 12px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.profile-button {
+  background-color: #90E0EF;
+}
+
+.book-button {
+  background-color: #0077B6;
+}
+
+.profile-button:hover,
+.book-button:hover {
+  background-color: #005f8c;
+}
+
+/* Footer */
+footer {
+  background-color: #0077B6;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 14px;
+}
